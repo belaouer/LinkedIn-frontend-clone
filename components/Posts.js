@@ -20,7 +20,7 @@ const Posts = () => {
         <Post />
       </div>
 
-      <div className='hidden lg:inline-flex lg:w-full  xl:hidden h-fit'>
+      <div className='hidden md:inline-flex md:w-full  lg:hidden h-fit'>
         <RightSidebar />
       </div>
     </div>
