@@ -1,10 +1,22 @@
 import { UserCircleIcon, BookmarkIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
+import Me from "../assets/images/Me.JPG";
+import Banner from "../assets/images/banner.jpeg";
 const IdentityCard = () => {
   return (
-    <div className='w-full bg-white rounded-md h-fit shadow'>
-      <div className='relative flex flex-col items-center py-4 lg:border-b group cursor-pointer'>
-        <div className='absolute top-0 left-0 right-0 h-14 bg-gray-200 z-0' />
-        <UserCircleIcon className='h-[72px] md:h-16 z-20 mb-4' />
+    <div className='w-full bg-white rounded-md h-fit shadow '>
+      <div className='relative flex flex-col items-center py-4 lg:border-b group cursor-pointer overflow-hidden'>
+        <div className='absolute top-0 left-0 right-0 h-14  z-0 '>
+          <Image
+            src={Banner}
+            layout='fill'
+            objectFit='contain'
+            className='rounded-tl-md rounded-tr-md'
+          />
+        </div>
+        <div className='relative w-[72px] h-[72px] rounded-full overflow-hidden md:w-16 md:h-16 z-20 mb-4'>
+          <Image src={Me} layout='fill' objectFit='cover' />
+        </div>
         <h1 className=' font-semibold mb-2 group-hover:underline'>
           Mohamed BELAOUER{" "}
         </h1>
